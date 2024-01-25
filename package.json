@@ -4,7 +4,6 @@
   "private": true,
   "author": "Onepecker-Team",
   "description": "React version of Material Kit 2 by Creative Tim",
-
   "engines": {
     "node": "14 || 15 || 16",
     "npm": ">=6"
@@ -58,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "7.30.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.3.0",
