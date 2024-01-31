@@ -1,4 +1,3 @@
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -21,7 +20,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/SAMPUL_2.png";
 
 function Presentation() {
   return (
@@ -40,7 +39,11 @@ function Presentation() {
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0),
+              rgba(gradients.dark.state, 1)
+            )}, url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -50,9 +53,19 @@ function Presentation() {
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
+              variant="body1"
+              color="white"
+              textAlign="center"
+              px={{ xs: 6, lg: 12 }}
+              mt={25}
+            >
+              Welcome to One Pecker Studio.
+            </MKTypography>
+            <MKTypography
               variant="h1"
               color="white"
-              mt={-6}
+              textAlign="center"
+              mt={1}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
@@ -60,17 +73,19 @@ function Presentation() {
                 },
               })}
             >
-              Guppy{" "}
+              Professional
+              <br />
+              Production House
             </MKTypography>
             <MKTypography
               variant="body1"
               color="white"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
-              mt={1}
+              mt={0}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Based in South Jakarta, Indonesia. We produce professional videos for brands and
+              governments.
             </MKTypography>
           </Grid>
         </Container>

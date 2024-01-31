@@ -1,4 +1,4 @@
-// @mui material components
+import React from "react";
 import Icon from "@mui/material/Icon";
 
 // @mui icons

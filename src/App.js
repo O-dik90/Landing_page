@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import react from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,7 +10,7 @@ import routes from "routes";
 export default function App() {
   const { pathname } = useLocation();
 
-  useEffect(() => {
+  react.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   }, [pathname]);

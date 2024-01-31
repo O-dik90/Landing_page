@@ -22,7 +22,7 @@ function BuiltByDevelopers() {
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
             rgba(gradients.dark.main, 0.8),
-            rgba(gradients.dark.state, 0.8)
+            rgba(gradients.dark.state, 1)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
