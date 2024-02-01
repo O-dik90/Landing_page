@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-// import GitHubIcon from "@mui/icons-material/GitHub";
+//import GitHubIcon from "@mui/icons-material/GitHub";
 import Inventory2Icon from "@mui/icons-material/Inventory2";
 
 // Pages
@@ -17,15 +17,24 @@ const routes = [
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "Landing Pages",
         collapse: [
+          {
+            name: "works",
+            route: "/pages/landing-pages/works",
+            component: <AboutUs />,
+          },
+          {
+            name: "services",
+            route: "/pages/landing-pages/services",
+            component: <AboutUs />,
+          },
           {
             name: "about us",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
           },
           {
-            name: "contact us",
+            name: "contact",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
           },
