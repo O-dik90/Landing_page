@@ -47,8 +47,13 @@ function Presentation() {
               variant="body1"
               color="white"
               textAlign="center"
-              px={{ xs: 8, lg: 12 }}
-              mt={24}
+              px={{ xs: 6, md: 8, lg: 12 }}
+              mt={30}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["md"],
+                },
+              })}
             >
               Welcome to One Pecker Studio.
             </MKTypography>
@@ -58,6 +63,7 @@ function Presentation() {
               textAlign="center"
               mt={1}
               mb={1}
+              px={{ xs: 2 }}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
@@ -72,20 +78,25 @@ function Presentation() {
               variant="body1"
               color="white"
               textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={0}
-              mb={4}
+              px={{ xs: 1, lg: 4 }}
+              mt={1}
+              mb={2}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["sm"],
+                },
+              })}
             >
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
-            <Grid container justifyContent="center" md={{ mt: 10 }}>
+            <Grid container justifyContent="center" md={{ mt: 5 }}>
               <MKButton
                 component="a"
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="secondary"
-                sx={{ mx: 2 }}
+                sx={{ m: 2 }}
               >
                 <i className="fab fa-twitter" />
                 &nbsp;About Us
@@ -95,7 +106,7 @@ function Presentation() {
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="danger"
-                sx={{ mx: 2 }}
+                sx={{ m: 2 }}
               >
                 <i className="fab fa-twitter" />
                 &nbsp;Get In Touch

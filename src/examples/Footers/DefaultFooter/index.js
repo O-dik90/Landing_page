@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // react-router-dom components
 import { Link } from "react-router-dom";
 
@@ -33,8 +18,8 @@ function DefaultFooter({ content }) {
   return (
     <MKBox component="footer">
       <Container>
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item md={4} sx={{ ml: "auto", mb: 3 }}>
+        <Grid container spacing={2}>
+          <Grid item md={4} sx={{ mx: "auto", mb: 3 }}>
             <MKBox>
               <Link to={brand.route}>
                 <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="2rem" mb={2} />
@@ -60,7 +45,7 @@ function DefaultFooter({ content }) {
             </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
-            <Grid key={title} item xs={6} md={3} sx={{ mb: 3 }}>
+            <Grid key={title} item xs={12} md={3} sx={{ mx: 3, mb: 3 }}>
               <MKTypography
                 display="block"
                 variant="button"

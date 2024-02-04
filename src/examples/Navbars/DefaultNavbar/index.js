@@ -483,6 +483,11 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
               fontWeight="bold"
               color={light ? "white" : "dark"}
               textTransform="upper"
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["sm"],
+                },
+              })}
             >
               {brand}
             </MKTypography>
