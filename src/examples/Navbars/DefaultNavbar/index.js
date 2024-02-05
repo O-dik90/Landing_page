@@ -482,7 +482,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
               variant="button"
               fontWeight="bold"
               color={light ? "white" : "dark"}
-              textTransform="upper"
+              textTransform="uppercase"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["sm"],

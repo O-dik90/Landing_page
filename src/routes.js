@@ -8,6 +8,9 @@ import Inventory2Icon from "@mui/icons-material/Inventory2";
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
+import Gallery from "layouts/pages/landing-pages/gallery";
+import Services from "layouts/pages/landing-pages/services";
+import Work from "layouts/pages/landing-pages/work";
 
 const routes = [
   {
@@ -20,13 +23,13 @@ const routes = [
         collapse: [
           {
             name: "works",
-            route: "/pages/landing-pages/works",
-            component: <AboutUs />,
+            route: "/pages/landing-pages/work",
+            component: <Work />,
           },
           {
             name: "services",
             route: "/pages/landing-pages/services",
-            component: <AboutUs />,
+            component: <Services />,
           },
           {
             name: "about us",
@@ -43,8 +46,10 @@ const routes = [
     ],
   },
   {
-    name: "Product",
+    name: "Gallery",
     icon: <Inventory2Icon />,
+    route: "/pages/landing-pages/gallery",
+    component: <Gallery />,
   },
   // {
   //   name: "github",

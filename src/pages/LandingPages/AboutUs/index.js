@@ -65,7 +65,7 @@ function AboutUs() {
               })}
             >
               Work with an amazing design
-            </MKTypography> */}
+            </MKTypography> 
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
@@ -89,7 +89,7 @@ function AboutUs() {
               <MKTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-google-plus" />
               </MKTypography>
-            </MKBox>
+            </MKBox>*/}
           </Grid>
         </Container>
       </MKBox>
@@ -102,10 +102,11 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
+        About Us Content
+        {/* <Information />
         <Team />
         <Featuring />
-        <Newsletter />
+        <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
