@@ -25,7 +25,7 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/bg-coworking.jpeg";
 
-function ContactUs() {
+function Work() {
   return (
     <>
       <DefaultNavbar routes={routes} dark sticky />

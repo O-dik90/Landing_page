@@ -30,13 +30,31 @@ function BuiltByDevelopers() {
     >
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
-          <MKTypography variant="h4" color="white" fontWeight="bold">
+          <MKTypography
+            variant="h4"
+            color="white"
+            fontWeight="bold"
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["md"],
+              },
+            })}
+          >
             What We Do
           </MKTypography>
-          <MKTypography variant="h1" color="white" mb={1}>
+          <MKTypography
+            variant="h1"
+            color="white"
+            mb={1}
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"],
+              },
+            })}
+          >
             We are a modern-day production and content studio.
           </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
+          <MKTypography variant="body2" color="white" opacity={0.8} mb={2}>
             From colors, cards, typography to complex elements, you will find the full
             documentation. Play with the utility classes and you will create unlimited combinations
             for our components.

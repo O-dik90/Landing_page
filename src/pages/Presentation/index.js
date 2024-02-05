@@ -80,17 +80,17 @@ function Presentation() {
               textAlign="center"
               px={{ xs: 1, lg: 4 }}
               mt={1}
-              mb={2}
+              mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["sm"],
+                  fontSize: size["md"],
                 },
               })}
             >
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
-            <Grid container justifyContent="center" md={{ mt: 5 }}>
+            <Grid container justifyContent="center">
               <MKButton
                 component="a"
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
@@ -119,7 +119,7 @@ function Presentation() {
         sx={{
           p: 1,
           mx: { xs: 2, lg: 2 },
-          mt: -6,
+          mt: 1,
           mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 1),
           backdropFilter: "saturate(200%) blur(40px)",
@@ -164,10 +164,10 @@ function Presentation() {
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
+                <MKTypography variant="h5" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
                 </MKTypography>
-                <MKTypography variant="body1" color="text">
+                <MKTypography variant="body2" color="text">
                   We deliver the best web products
                 </MKTypography>
               </Grid>

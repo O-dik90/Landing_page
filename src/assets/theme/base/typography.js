@@ -108,7 +108,7 @@ const typography = {
     fontFamily: baseProperties.fontFamily,
     fontSize: baseProperties.fontSizeMD,
     fontWeight: baseProperties.fontWeightLight,
-    lineHeight: 1.6,
+    lineHeight: 1.5,
   },
 
   button: {
