@@ -48,7 +48,7 @@ function Presentation() {
               color="white"
               textAlign="center"
               px={{ xs: 6, md: 8, lg: 12 }}
-              mt={30}
+              mt={32}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["md"],
@@ -90,13 +90,13 @@ function Presentation() {
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
-            <Grid container justifyContent="center">
+            <Grid container justifyContent="center" mb={5}>
               <MKButton
                 component="a"
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="secondary"
-                sx={{ m: 2 }}
+                sx={{ m: 1 }}
               >
                 <i className="fab fa-twitter" />
                 &nbsp;About Us
@@ -106,7 +106,7 @@ function Presentation() {
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="danger"
-                sx={{ m: 2 }}
+                sx={{ m: 1 }}
               >
                 <i className="fab fa-twitter" />
                 &nbsp;Get In Touch
@@ -119,7 +119,7 @@ function Presentation() {
         sx={{
           p: 1,
           mx: { xs: 2, lg: 2 },
-          mt: 1,
+          mt: -4,
           mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 1),
           backdropFilter: "saturate(200%) blur(40px)",
