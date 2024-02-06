@@ -438,7 +438,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             background: ({ palette: { white } }) => white.main,
           }}
         >
-          <MKBox ml={2.5} mt={-2.5} borderRadius="lg">
+          <MKBox ml={2.5} mt={-1.5} borderRadius="lg">
             <MKBox shadow="lg" borderRadius="lg" py={1.5} px={1} mt={2}>
               {renderNestedRoutes}
             </MKBox>
@@ -451,7 +451,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
   return (
     <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
       <MKBox
-        py={0.75}
+        py={0.5}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
         my={relative ? 0 : 2}
         mx={relative ? 0 : 3}
@@ -537,8 +537,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           <MKBox
             display={{ xs: "inline-block", lg: "none" }}
             lineHeight={0}
-            py={1.5}
-            pl={1.5}
+            py={1}
+            pl={1}
             color={transparent ? "white" : "inherit"}
             sx={{ cursor: "pointer" }}
             onClick={openMobileNavbar}
@@ -550,7 +550,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           bgColor={transparent ? "white" : "transparent"}
           shadow={transparent ? "lg" : "none"}
           borderRadius="xl"
-          px={transparent ? 2 : 0}
+          px={transparent ? 1 : 0}
         >
           {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
         </MKBox>

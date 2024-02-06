@@ -113,7 +113,7 @@ function DefaultNavbarMobile({ routes, open }) {
                       px: 1.625,
 
                       "&:hover": {
-                        backgroundColor: grey[200],
+                        backgroundColor: grey[300],
                         color: dark.main,
 
                         "& *": {

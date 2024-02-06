@@ -23,7 +23,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-coworking.jpeg";
+import bgImage from "assets/images/city-profile.jpg";
 
 function Gallery() {
   return (
@@ -48,7 +48,7 @@ function Gallery() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: 1,
+          mt: -4,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}

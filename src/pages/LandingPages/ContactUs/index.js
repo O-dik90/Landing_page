@@ -61,7 +61,7 @@ function ContactUs() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: 1,
+          mt: -4,
           mb: 4,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}

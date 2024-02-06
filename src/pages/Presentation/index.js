@@ -136,11 +136,11 @@ function Presentation() {
                 variant="gradient"
                 color="info"
                 icon="flag"
-                title="Getting Started"
+                title="Our Working Space"
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  type: "internal",
+                  route: "/pages/landing-pages/work",
                   label: "Read More",
                 }}
               />
@@ -149,11 +149,11 @@ function Presentation() {
               <FilledInfoCard
                 color="info"
                 icon="precision_manufacturing"
-                title="Plugins"
+                title="Services"
                 description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
+                  type: "internal",
+                  route: "/pages/landing-pages/services",
                   label: "Read more",
                 }}
               />

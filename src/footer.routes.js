@@ -13,7 +13,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Material Kit 2",
+    name: "ONE PECKER STUDIO",
     image: logoCT,
     route: "/",
   },
@@ -62,7 +62,7 @@ export default {
         variant="button"
         fontWeight="regular"
       >
-        Creative Tim
+        ONE PECKER TEAM
       </MKTypography>
       .
     </MKTypography>
