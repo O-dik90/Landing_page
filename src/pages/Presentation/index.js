@@ -27,7 +27,7 @@ function Presentation() {
     <>
       <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="75vh"
+        minHeight="80vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -42,13 +42,11 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={10} lg={8} py={16}>
+          <Grid container item xs={6} py={22} direction="column" alignItems="flex-start">
             <MKTypography
               variant="body1"
               color="white"
               mt={5}
-              mr={12}
-              //px={{ xs: 2, md: 8, lg: 12 }}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["xs"],
@@ -61,12 +59,10 @@ function Presentation() {
               variant="h2"
               color="white"
               // textAlign="center"
-              mt={1}
-              mb={1}
-              pr={{ xs: 2 }}
+              my={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
+                  fontSize: size["3xl"],
                 },
               })}
             >
@@ -78,7 +74,6 @@ function Presentation() {
               variant="body1"
               color="white"
               // textAlign="center"
-              pr={{ xs: 12 }}
               mt={1}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -117,6 +112,7 @@ function Presentation() {
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="danger"
+                size="small"
                 sx={{ m: 1 }}
               >
                 <MKTypography
@@ -138,7 +134,7 @@ function Presentation() {
       <Card
         sx={{
           p: 1,
-          mx: { xs: 2, lg: 2 },
+          mx: { xs: 2, lg: 6 },
           mt: -4,
           mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 1),
