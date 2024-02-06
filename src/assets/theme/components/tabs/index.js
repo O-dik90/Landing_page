@@ -29,7 +29,7 @@ export default {
   styleOverrides: {
     root: {
       position: "relative",
-      backgroundColor: grey[100],
+      backgroundColor: grey[200],
       borderRadius: borderRadius.xl,
       minHeight: "unset",
       padding: pxToRem(4),

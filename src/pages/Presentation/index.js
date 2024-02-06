@@ -42,31 +42,31 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={8} justifyContent="center" mx="auto">
+          <Grid container item xs={10} lg={8} py={16}>
             <MKTypography
               variant="body1"
               color="white"
-              textAlign="center"
-              px={{ xs: 6, md: 8, lg: 12 }}
-              mt={32}
+              mt={5}
+              mr={12}
+              //px={{ xs: 2, md: 8, lg: 12 }}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["md"],
+                  fontSize: size["xs"],
                 },
               })}
             >
               Welcome to One Pecker Studio.
             </MKTypography>
             <MKTypography
-              variant="h1"
+              variant="h2"
               color="white"
-              textAlign="center"
+              // textAlign="center"
               mt={1}
               mb={1}
-              px={{ xs: 2 }}
+              pr={{ xs: 2 }}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: size["2xl"],
                 },
               })}
             >
@@ -77,29 +77,40 @@ function Presentation() {
             <MKTypography
               variant="body1"
               color="white"
-              textAlign="center"
-              px={{ xs: 1, lg: 4 }}
+              // textAlign="center"
+              pr={{ xs: 12 }}
               mt={1}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["md"],
+                  fontSize: size["xs"],
                 },
               })}
             >
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
-            <Grid container justifyContent="center" mb={5}>
+            <Grid container mb={5}>
               <MKButton
                 component="a"
                 href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                 target="_blank"
                 color="secondary"
                 sx={{ m: 1 }}
+                size="small"
               >
-                <i className="fab fa-twitter" />
-                &nbsp;About Us
+                <MKTypography
+                  variant="body2"
+                  color="white"
+                  sx={({ breakpoints, typography: { size } }) => ({
+                    [breakpoints.down("md")]: {
+                      fontSize: size["xs"],
+                    },
+                  })}
+                >
+                  <i className="fab fa-twitter" />
+                  &nbsp;About Us
+                </MKTypography>
               </MKButton>
               <MKButton
                 component="a"
@@ -108,8 +119,17 @@ function Presentation() {
                 color="danger"
                 sx={{ m: 1 }}
               >
-                <i className="fab fa-twitter" />
-                &nbsp;Get In Touch
+                <MKTypography
+                  variant="body2"
+                  sx={({ breakpoints, typography: { size } }) => ({
+                    [breakpoints.down("md")]: {
+                      fontSize: size["xs"],
+                    },
+                  })}
+                >
+                  <i className="fab fa-twitter" />
+                  &nbsp;Get In Touch
+                </MKTypography>
               </MKButton>
             </Grid>
           </Grid>
@@ -137,7 +157,7 @@ function Presentation() {
                 color="info"
                 icon="flag"
                 title="Our Working Space"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Check the possible ways of working with our product for building your own project."
                 action={{
                   type: "internal",
                   route: "/pages/landing-pages/work",

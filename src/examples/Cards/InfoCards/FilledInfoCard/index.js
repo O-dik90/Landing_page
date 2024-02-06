@@ -41,7 +41,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
     <MKBox
       display={{ xs: "block", md: "flex" }}
       variant={variant}
-      bgColor={variant === "contained" ? "grey-100" : color}
+      bgColor={variant === "contained" ? "grey-200" : color}
       borderRadius="xl"
       pt={3.5}
       pb={3}

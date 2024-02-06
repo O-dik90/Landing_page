@@ -478,7 +478,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             alignItems="center"
           >
             <MKTypography
-              fontSize={20}
+              fontSize={16}
               variant="button"
               fontWeight="bold"
               color={light ? "white" : "dark"}
