@@ -23,7 +23,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/ABOUT_US.png";
 
 function AboutUs() {
   return (
@@ -48,32 +48,28 @@ function AboutUs() {
           <Grid
             container
             item
-            xs={12}
-            lg={8}
-            justifyContent="center"
-            alignItems="center"
+            py={"auto"}
+            xs={8}
+            lg={6}
+            alignItems="flex-start"
             flexDirection="column"
-            sx={{ mx: "auto", textAlign: "center" }}
           >
-            {/* <MKTypography
+            <MKTypography
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: size["2xl"],
                 },
               })}
             >
               Work with an amazing design
-            </MKTypography> 
+            </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
+            <MKTypography variant="h6" color="white" mt={2} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
@@ -89,7 +85,7 @@ function AboutUs() {
               <MKTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-google-plus" />
               </MKTypography>
-            </MKBox>*/}
+            </MKBox>
           </Grid>
         </Container>
       </MKBox>
@@ -103,10 +99,6 @@ function AboutUs() {
         }}
       >
         About Us Content
-        {/* <Information />
-        <Team />
-        <Featuring />
-        <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

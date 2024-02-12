@@ -21,7 +21,7 @@ function BuiltByDevelopers() {
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
-            rgba(gradients.dark.main, 0.8),
+            rgba(gradients.dark.main, 0.75),
             rgba(gradients.dark.state, 1)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
@@ -29,7 +29,7 @@ function BuiltByDevelopers() {
       }}
     >
       <Container>
-        <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
+        <Grid container item xs={8} lg={6} sx={{ ml: { xs: 0, lg: 6 } }} my={10}>
           <MKTypography
             variant="h4"
             color="white"
