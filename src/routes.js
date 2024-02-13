@@ -21,26 +21,26 @@ const routes = [
     collapse: [
       {
         collapse: [
-          {
-            name: "works",
-            route: "/pages/landing-pages/work",
-            component: <Work />,
-          },
-          {
-            name: "services",
-            route: "/pages/landing-pages/services",
-            component: <Services />,
-          },
+          // {
+          //   name: "works",
+          //   route: "/pages/landing-pages/work",
+          //   component: <Work />,
+          // },
+          // {
+          //   name: "services",
+          //   route: "/pages/landing-pages/services",
+          //   component: <Services />,
+          // },
           {
             name: "about us",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
           },
-          {
-            name: "contact",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
+          // {
+          //   name: "contact",
+          //   route: "/pages/landing-pages/contact-us",
+          //   component: <ContactUs />,
+          // },
         ],
       },
     ],
