@@ -45,26 +45,16 @@ function Presentation() {
       >
         <Container>
           <Grid container item xs={8} md={6} py={22} direction="column" alignItems="flex-start">
-            <MKTypography
-              variant="body1"
-              color="white"
-              mt={5}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["xs"],
-                },
-              })}
-            >
+            <MKTypography variant="body2" color="white" mt={5}>
               Welcome to One Pecker Studio.
             </MKTypography>
             <MKTypography
               variant="h2"
               color="white"
-              // textAlign="center"
               my={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
+                  fontSize: size["3xl"],
                 },
               })}
             >
@@ -72,18 +62,7 @@ function Presentation() {
               <br />
               Production House
             </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              // textAlign="center"
-              mt={1}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["xs"],
-                },
-              })}
-            >
+            <MKTypography variant="body2" color="white" mt={1} mb={1}>
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
@@ -96,38 +75,19 @@ function Presentation() {
                 sx={{ m: 1 }}
                 size="small"
               >
-                <MKTypography
-                  variant="body2"
-                  color="white"
-                  sx={({ breakpoints, typography: { size } }) => ({
-                    [breakpoints.down("md")]: {
-                      fontSize: size["xs"],
-                    },
-                  })}
-                >
-                  <i className="fab fa-twitter" />
-                  &nbsp;About Us
+                <MKTypography variant="body2" color="white">
+                  About Us
                 </MKTypography>
               </MKButton>
               <MKButton
                 component="a"
-                href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
+                href="#"
                 target="_blank"
                 color="danger"
                 size="small"
                 sx={{ m: 1 }}
               >
-                <MKTypography
-                  variant="body2"
-                  sx={({ breakpoints, typography: { size } }) => ({
-                    [breakpoints.down("md")]: {
-                      fontSize: size["xs"],
-                    },
-                  })}
-                >
-                  <i className="fab fa-twitter" />
-                  &nbsp;Get In Touch
-                </MKTypography>
+                <MKTypography variant="body2">Get In Touch</MKTypography>
               </MKButton>
             </Grid>
           </Grid>

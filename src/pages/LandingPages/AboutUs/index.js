@@ -15,7 +15,7 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
+import Motto from "pages/LandingPages/AboutUs/sections/Motto";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
@@ -98,7 +98,9 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        About Us Content
+        <Newsletter />
+        <Team />
+        <Motto />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

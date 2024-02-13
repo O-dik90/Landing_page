@@ -11,6 +11,7 @@ import MKButton from "components/MKButton";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
+import GalleryContents from "pages/LandingPages/Gallery/section/GalleryContents";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
@@ -53,7 +54,7 @@ function Gallery() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        Gallery Content
+        <GalleryContents />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

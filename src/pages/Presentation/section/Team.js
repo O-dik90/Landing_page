@@ -89,7 +89,7 @@ function Team() {
           sx={{ textAlign: { xs: "center" } }}
         >
           <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-            Show More
+            <MKTypography variant="body2">Show More</MKTypography>
           </MKButton>
         </Grid>
       </Container>
