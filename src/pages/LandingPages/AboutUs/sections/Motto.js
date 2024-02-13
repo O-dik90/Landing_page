@@ -14,11 +14,10 @@ import bgImage from "assets/images/shapes/waves-white.svg";
 function Motto() {
   return (
     <MKBox component="section" py={{ xs: 0, sm: 6 }}>
-      <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
+      <Container xs={12} sx={{ position: "relative", zIndex: 2, py: 12 }}>
         <Grid
           container
           item
-          xs={12}
           md={7}
           justifyContent="center"
           mx="auto"
@@ -28,7 +27,16 @@ function Motto() {
           <MKTypography variant="h4" color="dark">
             Our motto
           </MKTypography>
-          <MKTypography variant="h1" color="info" mb={6}>
+          <MKTypography
+            variant="h1"
+            color="info"
+            mb={6}
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["xl"],
+              },
+            })}
+          >
             #TerusTumbuhdanSemakinKokoh
           </MKTypography>
         </Grid>
