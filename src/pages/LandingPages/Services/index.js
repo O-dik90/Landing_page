@@ -13,9 +13,9 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
+import Information from "pages/LandingPages/Services/sections/Information";
 // import Team from "pages/LandingPages/AboutUs/sections/Team";
-// import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
+import Featuring from "pages/LandingPages/Services/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
@@ -23,7 +23,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-coworking.jpeg";
+import bgImage from "assets/images/SERVICES.png";
 
 function Services() {
   return (
@@ -66,9 +66,8 @@ function Services() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        Services Content
-        {/* <Information /> */}
-        {/* <Team /> */}
+        <Information />
+        <Featuring />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

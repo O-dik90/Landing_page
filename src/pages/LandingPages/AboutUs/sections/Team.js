@@ -62,18 +62,18 @@ function Team() {
               VISION
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              Our vision is "to become one of the professional production houses in Indonesia that
-              is capable of creating the best quality of work
+              Our vision is "To become one of the professional production houses in Indonesia that
+              is capable of creating the best quality of work."
             </MKTypography>
           </Grid>
         </Grid>
         <Grid container>
           <Grid item xs={12} md={6} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              Mission
+              MISSION
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              Our mission is "to always work wholeheartedly so that every work that is born can have
+              Our mission is "To always work wholeheartedly so that every work that is born can have
               an impact on the audience"
             </MKTypography>
           </Grid>
