@@ -1,10 +1,13 @@
+import bgImage from "assets/images/city-profile.jpg";
+
 export default [
   {
     title: "Film / Web Series",
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image: `headers.jpg`,
+        image:
+          "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg",
         name: "Page Headers",
         count: 10,
         route: "/sections/page-sections/page-headers",

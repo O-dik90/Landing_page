@@ -32,7 +32,7 @@ import team4 from "assets/images/ivana-square.jpg";
 
 import bgImage from "assets/images/ABOUT_US_2.png";
 
-function Team() {
+function Mission() {
   return (
     <MKBox
       component="section"
@@ -83,4 +83,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default Mission;

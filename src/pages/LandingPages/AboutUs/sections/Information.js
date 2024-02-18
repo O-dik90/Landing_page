@@ -1,86 +1,48 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
+import MKInput from "components/MKInput";
+import MKButton from "components/MKButton";
 
-// Material Kit 2 React examples
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
+// Images
+import about from "assets/images/ABOUT_US_1.png";
 
 function Information() {
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" pt={1} my={2}>
       <Container>
-        <Grid container spacing={3} alignItems="center">
-          <Grid item xs={12} lg={6}>
-            <Grid container justifyContent="flex-start">
-              <Grid item xs={12} md={6}>
-                <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon="payments"
-                    title="Payments functionality"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={{ xs: 5, md: 0 }}>
-                  <DefaultInfoCard
-                    icon="apps"
-                    title="Prebuilt components"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
-                </MKBox>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <MKBox mb={{ xs: 5, md: 0 }}>
-                  <DefaultInfoCard
-                    icon="3p"
-                    title="Improved platform"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
-                </MKBox>
-              </Grid>
-            </Grid>
+        <Grid container alignItems="center">
+          <Grid item xs={12} md={5} sx={{ mx: "auto" }}>
+            <MKBox position="relative">
+              <MKBox component="img" src={about} alt="macbook" width="100%" borderRadius="lg" />
+            </MKBox>
           </Grid>
-          <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
-            <CenteredBlogCard
-              image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              title="Get insights on Search"
-              description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
-              action={{
-                type: "internal",
-                route: "pages/company/about-us",
-                color: "info",
-                label: "find out more",
-              }}
-            />
+          <Grid
+            item
+            xs={12}
+            md={5}
+            sx={{ mt: { xs: 3 }, mx: { xs: 0, lg: "auto" }, mb: { xs: 2, md: 0 } }}
+          >
+            <MKTypography
+              variant="h2"
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              Where Stories Come To Life
+            </MKTypography>
+            <MKTypography variant="body2" color="text" mb={3}>
+              One Pecker Studio is a production company and content studio dedicated to creating
+              films, television series, and branded content. Our award-winning works are designed to
+              entertain, inspire, and foster meaningful conversations. We believe in the power of
+              storytelling to connect and resonate with audiences worldwide.
+            </MKTypography>
           </Grid>
         </Grid>
       </Container>

@@ -14,8 +14,8 @@ import GalleryCards from "examples/Cards/GalleryCards/index";
 import data from "pages/LandingPages/Gallery/data/index";
 
 function GalleryContents() {
-  const renderData = data.map(({ title, description, items }) => (
-    <Grid container spacing={3} sx={{ mb: 10 }} key={title}>
+  const renderData = data.map(({ title, description, items }, index) => (
+    <Grid container spacing={3} sx={{ mb: 10 }} key={index}>
       <Grid item xs={12} lg={3}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
@@ -28,9 +28,9 @@ function GalleryContents() {
       </Grid>
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
-          {items.map(({ name, count, route, pro }) => (
-            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <GalleryCards name={name} count={count} pro={false} />
+          {items.map(({ name, count, image, route }) => (
+            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={`item-${name}`}>
+              <GalleryCards name={name} count={count} image={image} />
             </Grid>
           ))}
         </Grid>

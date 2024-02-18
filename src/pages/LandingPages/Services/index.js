@@ -24,6 +24,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/SERVICES.png";
+import Mission from "./sections/Mission";
 
 function Services() {
   return (
@@ -68,6 +69,7 @@ function Services() {
       >
         <Information />
         <Featuring />
+        <Mission />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

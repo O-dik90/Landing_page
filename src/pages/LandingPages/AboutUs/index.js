@@ -6,7 +6,6 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -14,9 +13,8 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Mission from "pages/LandingPages/AboutUs/sections/Mission";
 import Motto from "pages/LandingPages/AboutUs/sections/Motto";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
 import routes from "routes";
@@ -98,8 +96,8 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Newsletter />
-        <Team />
+        <Information />
+        <Mission />
         <Motto />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

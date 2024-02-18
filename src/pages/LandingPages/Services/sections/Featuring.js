@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
@@ -15,6 +16,9 @@ function Featuring() {
       <Container>
         <Grid container spacing={3} alignItems="center">
           <Grid item xs={12}>
+            <MKTypography variant="h4" color="dark" mb={3}>
+              Our Scope
+            </MKTypography>
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={3}>
                 <MKBox mb={5}>
