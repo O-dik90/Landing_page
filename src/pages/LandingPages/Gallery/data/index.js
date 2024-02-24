@@ -1,4 +1,5 @@
-import bgImage from "assets/images/city-profile.jpg";
+const prefix = "https://drive.google.com/drive/folders/";
+import bgImage from "assets/images/bg-coworking.jpeg";
 
 export default [
   {
@@ -6,8 +7,7 @@ export default [
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image:
-          "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg",
+        image: "assets/images/bg-coworking.jpeg",
         name: "Page Headers",
         count: 10,
         route: "/sections/page-sections/page-headers",

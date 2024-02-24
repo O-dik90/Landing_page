@@ -8,14 +8,24 @@ import Tooltip from "@mui/material/Tooltip";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function GalleryCard({ image, name, count, ...rest }) {
+function GalleryCard({ image, name, ...rest }) {
   const imageTemplate = (
     <MKBox
       bgColor="white"
       borderRadius="xl"
       shadow="lg"
       minHeight="10rem"
+      width="100%"
       sx={{
+        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+          `${linearGradient(
+            rgba(gradients.dark.main, 0.6),
+            rgba(gradients.dark.state, 0.6)
+          )}, url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "grid",
+        placeItems: "center",
         overflow: "hidden",
         transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
         transformOrigin: "50% 0",
@@ -28,24 +38,17 @@ function GalleryCard({ image, name, count, ...rest }) {
         },
       }}
       {...rest}
-    >
-      <MKBox component="img" src={image} alt={name} width="100%" my="auto" />
-    </MKBox>
+    ></MKBox>
   );
 
   return (
     <MKBox position="relative">
       {imageTemplate}
-      {name || count > 0 ? (
+      {name > 0 ? (
         <MKBox mt={1} ml={1} lineHeight={1}>
           {name && (
             <MKTypography variant="h6" fontWeight="bold">
               {name}
-            </MKTypography>
-          )}
-          {count > 0 && (
-            <MKTypography variant="button" fontWeight="regular" color="secondary">
-              {count} {count === 1 ? "Example" : "Examples"}
             </MKTypography>
           )}
         </MKBox>
@@ -57,14 +60,12 @@ function GalleryCard({ image, name, count, ...rest }) {
 // Setting default props for the ExampleCard
 GalleryCard.defaultProps = {
   name: "",
-  count: 0,
 };
 
 // Typechecking props for the ExampleCard
 GalleryCard.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string,
-  count: PropTypes.number,
 };
 
 export default GalleryCard;

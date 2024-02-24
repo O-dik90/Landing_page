@@ -28,9 +28,9 @@ function GalleryContents() {
       </Grid>
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
-          {items.map(({ name, count, image, route }) => (
+          {items.map(({ name, image, route }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={`item-${name}`}>
-              <GalleryCards name={name} count={count} image={image} />
+              <GalleryCards name={name} image={image} />
             </Grid>
           ))}
         </Grid>
