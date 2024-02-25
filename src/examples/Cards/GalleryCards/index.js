@@ -8,42 +8,61 @@ import Tooltip from "@mui/material/Tooltip";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
+import BgImage from "assets/images/bg-about-us.jpg";
 function GalleryCard({ image, name, ...rest }) {
-  const imageTemplate = (
-    <MKBox
-      bgColor="white"
-      borderRadius="xl"
-      shadow="lg"
-      minHeight="10rem"
-      width="100%"
-      sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-          `${linearGradient(
-            rgba(gradients.dark.main, 0.6),
-            rgba(gradients.dark.state, 0.6)
-          )}, url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "grid",
-        placeItems: "center",
-        overflow: "hidden",
-        transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
-        transformOrigin: "50% 0",
-        backfaceVisibility: "hidden",
-        willChange: "transform, box-shadow",
-        transition: "transform 200ms ease-out",
+  // const imageTemplate = (
+  //   <MKBox
+  //     bgColor="white"
+  //     borderRadius="xl"
+  //     shadow="lg"
+  //     minHeight="10rem"
+  //     width="100%"
+  //     sx={{
+  //       display: "grid",
+  //       placeItems: "cover",
+  //       overflow: "hidden",
+  //       transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
+  //       transformOrigin: "50% 0",
+  //       backfaceVisibility: "hidden",
+  //       willChange: "transform, box-shadow",
+  //       transition: "transform 200ms ease-out",
 
-        "&:hover": {
-          transform: "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
-        },
-      }}
-      {...rest}
-    ></MKBox>
-  );
+  //       "&:hover": {
+  //         transform: "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
+  //       },
+  //     }}
+  //     {...rest}
+  //   >
+  //     <MKBox component="img" src={image} alt={name} width="100%" my="auto" />
+  //   </MKBox>
+  // );
 
   return (
     <MKBox position="relative">
-      {imageTemplate}
+      <MKBox
+        bgColor="white"
+        borderRadius="xl"
+        shadow="lg"
+        minHeight="10rem"
+        width="100%"
+        sx={{
+          display: "grid",
+          placeItems: "cover",
+          overflow: "hidden",
+          transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
+          transformOrigin: "50% 0",
+          backfaceVisibility: "hidden",
+          willChange: "transform, box-shadow",
+          transition: "transform 200ms ease-out",
+
+          "&:hover": {
+            transform: "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
+          },
+        }}
+        {...rest}
+      >
+        <MKBox component="img" src={image} alt={name} width="100%" my="auto" />
+      </MKBox>
       {name > 0 ? (
         <MKBox mt={1} ml={1} lineHeight={1}>
           {name && (
