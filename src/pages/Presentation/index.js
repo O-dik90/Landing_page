@@ -5,7 +5,6 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
 import MKButton from "components/MKButton";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -66,7 +65,7 @@ function Presentation() {
               Based in South Jakarta, Indonesia. We produce professional videos for brands and
               governments.
             </MKTypography>
-            <Grid container mb={5}>
+            {/* <Grid container mb={5}>
               <MKButton
                 component="a"
                 href="#"
@@ -89,7 +88,7 @@ function Presentation() {
               >
                 <MKTypography variant="body2">Get In Touch</MKTypography>
               </MKButton>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Container>
       </MKBox>

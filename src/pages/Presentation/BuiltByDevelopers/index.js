@@ -6,7 +6,7 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import bgImage from "assets/images/SAMPUL.png";
+import bgImage from "assets/images/bg-blue.png";
 
 function BuiltByDevelopers() {
   // const bgImage = "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
@@ -21,8 +21,8 @@ function BuiltByDevelopers() {
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
-            rgba(gradients.dark.main, 0.75),
-            rgba(gradients.dark.state, 1)
+            rgba(gradients.dark.main, 0),
+            rgba(gradients.dark.state, 0.5)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
