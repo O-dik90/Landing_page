@@ -1,5 +1,5 @@
-const prefix = "https://drive.google.com/drive/folders/";
-import bgImage from "assets/images/bg-coworking.jpeg";
+const prefix =
+  "https://raw.githubusercontent.com/O-dik90/Landing_page/master/src/assets/images/products/";
 
 export default [
   {
@@ -7,22 +7,20 @@ export default [
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image:
-          "https://raw.githubusercontent.com/O-dik90/Landing_page/master/src/assets/images/macbook.png?token=GHSAT0AAAAAACODRQAKV64CBRVYSLFWMCGUZO24GJA",
-        name: "Page Headers",
+        image: `${prefix}film_web_series/mimi_1.png`,
+        name: "Mimi lan Mintuna",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image:
-          "https://uploads.codesandbox.io/uploads/user/ad62d1c2-a1c6-4e01-9db3-974dab16d49e/OtdY-croissant-other.jpg",
-        name: "Page Headers",
+        image: `${prefix}film_web_series/sepanjang_1.png`,
+        name: "Sepanjang",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}film_web_series/sepanjang_2.png`,
+        name: "Trailer Speanjang",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
@@ -33,20 +31,20 @@ export default [
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}company_profiles/NUTRIFEED.png`,
+        name: "NUTRIFEED",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}company_profiles/NUTRIFEED_2.png`,
+        name: "NUTRIFEED",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}company_profiles/TELKOM AKSES.png`,
+        name: "TELKOM",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
@@ -57,44 +55,164 @@ export default [
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}documentary/ledhek.png`,
+        name: "Ledhek",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}documentary/aqua.png`,
+        name: "Aqua",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}documentary/TULUNGAGUNG.png`,
+        name: "Penggerak Tulungagung",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}documentary/HIV.png`,
+        name: "HIV",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}documentary/BLITAR.png`,
+        name: "Blitar",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
     ],
   },
   {
-    title: "Creatif Content",
+    title: "Digital Video",
     description: "A selection of 45 page sections that fit perfectly in any combination.",
     items: [
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}digital_video/Confidence Premium Night.png`,
+        name: "Confidence Premium Night",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}digital_video/KUNCIE 1.png`,
+        name: "Kunchie",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `headers.jpg`,
-        name: "Page Headers",
+        image: `${prefix}digital_video/Molto.png`,
+        name: "Molto",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}digital_video/Ntrl.png`,
+        name: "NETRAL x OVO",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}digital_video/Slank.png`,
+        name: "SLANK x GRAB x OVO",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}digital_video/PONGAH.png`,
+        name: "PONGAH",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+    ],
+  },
+  {
+    title: "Infographic / Animation",
+    description: "A selection of 45 page sections that fit perfectly in any combination.",
+    items: [
+      {
+        image: `${prefix}infographic/paddle pop 1.png`,
+        name: "Paddle Pop",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}/infographic/paddle pop 2.png`,
+        name: "Paddle Pop",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/DINKES.png`,
+        name: "Dinas Kesehatan",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/DINKES_1.png`,
+        name: "Dinas Kesehatan",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/A MILD - VR.png`,
+        name: "A MILD",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/A MILD - WEB.png`,
+        name: "A MILD",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/BTN PRIORITAS - APRIL.png`,
+        name: "BTN PRIORITAS",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/BTN PRIORITAS - JUNI.png`,
+        name: "BTN PRIORITAS",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/BTN PRIORITAS - AGUSTUS.png`,
+        name: "BTN PRIORITAS",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}infographic/BTN PRIORITAS - SEPTEMBER.png`,
+        name: "BTN PRIORITAS",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+    ],
+  },
+  {
+    title: "Music Video",
+    description: "A selection of 45 page sections that fit perfectly in any combination.",
+    items: [
+      {
+        image: `${prefix}music_video/DAMARA DE - TRESNOMU LUNGO.png`,
+        name: "DAMARA DE - TRESNOMU LUNGO",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}music_video/DAMARA DE - CRITO MUSTAHIL.png`,
+        name: "DAMARA DE - CRITO MUSTAHIL",
+        count: 10,
+        route: "/sections/page-sections/page-headers",
+      },
+      {
+        image: `${prefix}music_video/nareswara.png`,
+        name: "NARESWARA",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },

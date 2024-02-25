@@ -63,15 +63,13 @@ function GalleryCard({ image, name, ...rest }) {
       >
         <MKBox component="img" src={image} alt={name} width="100%" my="auto" />
       </MKBox>
-      {name > 0 ? (
-        <MKBox mt={1} ml={1} lineHeight={1}>
-          {name && (
-            <MKTypography variant="h6" fontWeight="bold">
-              {name}
-            </MKTypography>
-          )}
-        </MKBox>
-      ) : null}
+      <MKBox mt={1} ml={1} lineHeight={1}>
+        {name && (
+          <MKTypography variant="h6" fontWeight="bold">
+            {name}
+          </MKTypography>
+        )}
+      </MKBox>
     </MKBox>
   );
 }
