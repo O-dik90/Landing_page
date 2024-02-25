@@ -28,9 +28,11 @@ function GalleryContents() {
       </Grid>
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
-          {items.map(({ name, image, route }) => (
-            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={`item-${name}`}>
-              <GalleryCards name={name} image={image} />
+          {items.map(({ id, name, image, route }) => (
+            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={`item-${id}`}>
+              <Link to={route.link} target="_blank">
+                <GalleryCards name={name} image={image} route={route.title} />
+              </Link>
             </Grid>
           ))}
         </Grid>
