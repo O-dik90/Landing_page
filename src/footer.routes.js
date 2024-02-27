@@ -20,44 +20,44 @@ export default {
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/",
+      link: "#",
     },
     {
       icon: <TwitterIcon />,
-      link: "https://twitter.com/creativetim",
+      link: "#",
     },
     {
       icon: <YouTubeIcon />,
-      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      link: "#",
     },
   ],
   menus: [
     {
       name: "company",
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        { name: "about us", href: "#" },
+        { name: "freebies", href: "#" },
+        { name: "premium tools", href: "#" },
+        { name: "blog", href: "#" },
       ],
     },
     {
       name: "help & support",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+        { name: "contact us", href: "#" },
+        { name: "knowledge center", href: "#" },
+        { name: "custom development", href: "#" },
+        { name: "sponsorships", href: "#" },
       ],
     },
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
+      All rights reserved. Copyright &copy; {date}{" "}
       <MKTypography
-        component="a"
-        href="https://www.creative-tim.com"
-        target="_blank"
+        //component="a"
+        //href="#"
+        // target="_blank"
         rel="noreferrer"
         variant="button"
         fontWeight="regular"

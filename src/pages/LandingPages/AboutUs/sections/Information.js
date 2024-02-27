@@ -9,7 +9,7 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Images
-import about from "assets/images/ABOUT_US_1.png";
+import about from "assets/images/bg_contactus.png";
 
 function Information() {
   return (

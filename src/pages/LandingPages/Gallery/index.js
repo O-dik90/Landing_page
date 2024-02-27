@@ -14,7 +14,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "assets/images/bg_gallery.png";
 
 function Gallery() {
   return (
@@ -26,8 +26,8 @@ function Gallery() {
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.2),
+              rgba(gradients.dark.state, 0.9)
             )}, url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

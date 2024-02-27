@@ -44,11 +44,11 @@ function Presentation() {
       >
         <Container>
           <Grid container item xs={8} md={6} py={22} direction="column" alignItems="flex-start">
-            <MKTypography variant="body2" color="white" mt={5}>
+            <MKTypography variant="body1" color="white" mt={5}>
               Welcome to One Pecker Studio.
             </MKTypography>
             <MKTypography
-              variant="h2"
+              variant="h1"
               color="white"
               my={1}
               sx={({ breakpoints, typography: { size } }) => ({

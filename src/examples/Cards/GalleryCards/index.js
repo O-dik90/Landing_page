@@ -39,7 +39,7 @@ function GalleryCard({ image, name, route, ...rest }) {
 
   return (
     <MKBox position="relative">
-      <Tooltip title={route} placement="top">
+      <Tooltip title={`YT: ${route?.substring(0, 15)} ...`} placement="top-end">
         {imageTemplate}
       </Tooltip>
       <MKBox mt={1} ml={1} lineHeight={1}>

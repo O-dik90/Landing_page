@@ -27,7 +27,7 @@ export default [
       {
         id: 3,
         image: `${prefix}film_web_series/sepanjang_2.png`,
-        name: "Trailer Speanjang",
+        name: "Trailer Sepanjang",
         route: {
           title: "TRAILER _ SEPANJANG 2006",
           link: "https://www.youtube.com/watch?v=nXVPViA_n0Q&t=1s",

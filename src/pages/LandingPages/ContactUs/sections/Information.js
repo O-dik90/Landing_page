@@ -9,7 +9,7 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Images
-import about from "assets/images/ABOUT_US_1.png";
+//import about from "assets/images/ABOUT_US_1.png";
 
 function Information() {
   return (
@@ -77,7 +77,7 @@ function Information() {
                     </Grid>
                   </Grid>
                   <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                    <MKButton type="submit" variant="gradient" color="info">
+                    <MKButton type="submit" variant="gradient" color="info" disabled>
                       Send Message
                     </MKButton>
                   </Grid>
