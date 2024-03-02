@@ -2,15 +2,15 @@ import React from "react";
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-//import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from "@mui/icons-material/Link";
 import Inventory2Icon from "@mui/icons-material/Inventory2";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Gallery from "layouts/pages/landing-pages/gallery";
+// import Gallery from "layouts/pages/landing-pages/gallery";
 import Services from "layouts/pages/landing-pages/services";
-import Work from "layouts/pages/landing-pages/work";
+import Works from "layouts/pages/landing-pages/work";
 
 const routes = [
   {
@@ -22,9 +22,9 @@ const routes = [
       {
         collapse: [
           // {
-          //   name: "works",
+          //   name: "gallery",
           //   route: "/pages/landing-pages/work",
-          //   component: <Work />,
+          //   component: <Works />,
           // },
           {
             name: "about us",
@@ -46,16 +46,16 @@ const routes = [
     ],
   },
   {
-    name: "Gallery",
+    name: "Works",
     icon: <Inventory2Icon />,
-    route: "/pages/landing-pages/gallery",
-    component: <Gallery />,
+    route: "/pages/landing-pages/work",
+    component: <Works />,
   },
-  // {
-  //   name: "github",
-  //   icon: <GitHubIcon />,
-  //   href: "https://www.github.com/creativetimofficial/material-kit-react",
-  // },
+  {
+    name: "Linktree",
+    icon: <Link />,
+    href: "https://linktr.ee/onepeckerstudio",
+  },
 ];
 
 export default routes;

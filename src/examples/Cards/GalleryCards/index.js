@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Tooltip from "@mui/material/Tooltip";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -39,13 +40,19 @@ function GalleryCard({ image, name, route, ...rest }) {
 
   return (
     <MKBox position="relative">
-      <Tooltip title={`YT: ${route?.substring(0, 15)} ...`} placement="top-end">
-        {imageTemplate}
-      </Tooltip>
+      {/* <Tooltip title={`YT: ${route?.substring(0, 15)} ...`} placement="top-end">
+        
+      </Tooltip> */}
+      {imageTemplate}
       <MKBox mt={1} ml={1} lineHeight={1}>
         {name && (
           <MKTypography variant="h6" fontWeight="bold">
             {name}
+          </MKTypography>
+        )}
+        {route && (
+          <MKTypography variant="button" fontWeight="regular" color="secondary">
+            <YouTubeIcon /> {route?.substring(0, 30)}...
           </MKTypography>
         )}
       </MKBox>

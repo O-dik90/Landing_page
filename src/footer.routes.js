@@ -7,7 +7,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
 // Images
-import logoCT from "assets/images/logo_ops_color.png";
+import logoCT from "assets/images/logos/ops/logo_ops_color.svg";
+import { WhatsApp, Link } from "@mui/icons-material";
 
 const date = new Date().getFullYear();
 
@@ -20,15 +21,23 @@ export default {
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "#",
+      link: "https://www.facebook.com/onepeckerstudio",
     },
     {
       icon: <TwitterIcon />,
-      link: "#",
+      link: "https://twitter.com/onepeckerstudio",
     },
     {
       icon: <YouTubeIcon />,
-      link: "#",
+      link: "https://www.youtube.com/@onepeckerstudio",
+    },
+    {
+      icon: <WhatsApp />,
+      link: "https://api.whatsapp.com/send/?phone=6285743355062&text&type=phone_number&app_absent=0",
+    },
+    {
+      icon: <Link />,
+      link: "https://linktr.ee/onepeckerstudio",
     },
   ],
   menus: [

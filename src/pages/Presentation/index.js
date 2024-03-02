@@ -13,9 +13,8 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/BuiltByDevelopers";
-import Featuring from "pages/Presentation/section/Featuring";
-import Team from "pages/Presentation/section/Team";
-
+import ClientsPart from "pages/Presentation/section/ClientsPart";
+import WorksPart from "./section/WorksPart";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
@@ -94,7 +93,7 @@ function Presentation() {
       </MKBox>
       <Card
         sx={{
-          p: 2,
+          pt: 10,
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
@@ -135,8 +134,8 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Team />
-        <Featuring />
+        <WorksPart />
+        <ClientsPart />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

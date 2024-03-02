@@ -11,7 +11,7 @@ import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 import GalleryCards from "examples/Cards/GalleryCards/index";
 
-import data from "pages/LandingPages/Gallery/data/index";
+import data from "pages/LandingPages/Work/data/index";
 
 function GalleryContents() {
   const renderData = data.map(({ title, description, items }, index) => (
