@@ -1,6 +1,7 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -13,6 +14,10 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
+
+import Information from "./sections/Information";
+import Mission from "./sections/Mission";
+import Motto from "./sections/Motto";
 
 // Images
 import bgImage from "assets/images/cover/bg_aboutus.png";
@@ -104,7 +109,7 @@ function AboutUs() {
           </Grid>
         </Container>
       </MKBox>
-      {/* <Card
+      <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -116,7 +121,7 @@ function AboutUs() {
         <Information />
         <Mission />
         <Motto />
-      </Card> */}
+      </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

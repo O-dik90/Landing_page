@@ -100,9 +100,9 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* <Container>
+        <Container>
           <BuiltByDevelopers />
-        </Container> */}
+        </Container>
         <Container sx={{ mt: 2, mb: 10 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={6}>
