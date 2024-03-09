@@ -1,7 +1,6 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -11,17 +10,12 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
-// About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Mission from "pages/LandingPages/AboutUs/sections/Mission";
-import Motto from "pages/LandingPages/AboutUs/sections/Motto";
-
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/ABOUT_US.png";
+import bgImage from "assets/images/cover/bg_aboutus.png";
 
 function AboutUs() {
   return (
@@ -57,13 +51,13 @@ function AboutUs() {
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
+                  fontSize: size["3xl"],
                 },
               })}
             >
-              Work with an amazing design
+              Work with <br /> an amazing design
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+            <MKTypography variant="body2" color="white" opacity={0.8} mt={1} mb={3}>
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game
             </MKTypography>
@@ -71,23 +65,46 @@ function AboutUs() {
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://www.facebook.com/onepeckerstudio"
+                mr={3}
+              >
                 <i className="fab fa-facebook" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://twitter.com/onepeckerstudio"
+                mr={3}
+              >
                 <i className="fab fa-twitter" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://www.instagram.com/onepeckerstudio"
+                mr={3}
+              >
+                <i className="fab fa-instagram" />
+              </MKTypography>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="mailto:onepecker@gmail.com"
+              >
                 <i className="fab fa-google-plus" />
               </MKTypography>
             </MKBox>
           </Grid>
         </Container>
       </MKBox>
-      <Card
+      {/* <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -99,7 +116,7 @@ function AboutUs() {
         <Information />
         <Mission />
         <Motto />
-      </Card>
+      </Card> */}
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

@@ -21,7 +21,7 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-import bgImage from "assets/images/ABOUT_US_2.png";
+import bgImage from "assets/images/cover/bg_aboutus_2.png";
 
 function Mission() {
   return (

@@ -20,7 +20,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/SAMPUL_2.png";
+import bgImage from "assets/images/cover/bg_landing.png";
 
 function Presentation() {
   return (
@@ -100,9 +100,9 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Container>
+        {/* <Container>
           <BuiltByDevelopers />
-        </Container>
+        </Container> */}
         <Container sx={{ mt: 2, mb: 10 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={6}>

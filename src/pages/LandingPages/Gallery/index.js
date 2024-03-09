@@ -21,7 +21,7 @@ import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "assets/images/cover/bg-sign-in-basic.jpeg";
 
 function Gallery() {
   const ImageCollect = (

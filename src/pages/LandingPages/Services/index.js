@@ -23,7 +23,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/SERVICES.png";
+import bgImage from "assets/images/cover/bg_services.png";
 import Mission from "./sections/Mission";
 import ServicePart from "./sections/ServicePart";
 

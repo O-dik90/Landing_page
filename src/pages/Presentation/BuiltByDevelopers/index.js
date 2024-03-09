@@ -6,7 +6,7 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import bgImage from "assets/images/bg-blue.png";
+import bgImage from "assets/images/cover/bg-blue.png";
 
 import LOGO from "assets/images/logos/ops/logo_ops_white.svg";
 

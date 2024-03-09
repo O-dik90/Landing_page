@@ -14,7 +14,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg_gallery.png";
+import bgImage from "assets/images/cover/bg_gallery.png";
 
 function Works() {
   return (

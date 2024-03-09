@@ -30,7 +30,7 @@ import team2 from "assets/images/bruce-mars.jpg";
 import team3 from "assets/images/ivana-squares.jpg";
 import team4 from "assets/images/ivana-square.jpg";
 
-import bgImage from "assets/images/ABOUT_US_2.png";
+import bgImage from "assets/images/cover/bg-sign-in-basic.jpeg";
 
 function Mission() {
   return (

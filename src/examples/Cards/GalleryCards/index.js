@@ -2,14 +2,12 @@
 import PropTypes from "prop-types";
 
 // @mui material components
-import Tooltip from "@mui/material/Tooltip";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-import BgImage from "assets/images/bg-about-us.jpg";
 function GalleryCard({ image, name, route, ...rest }) {
   const imageTemplate = (
     <MKBox

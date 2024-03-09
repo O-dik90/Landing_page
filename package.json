@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Onepecker-Team",
-  "description": "React version of Material Kit 2 by Creative Tim",
+  "description": "Landing Page with React version of Material Kit 2 by Creative Tim",
   "engines": {
     "node": "14 || 15 || 16",
     "npm": ">=6"

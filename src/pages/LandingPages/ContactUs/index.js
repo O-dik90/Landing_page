@@ -24,7 +24,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg_contactus.png";
+import bgImage from "assets/images/cover/bg_contactus.png";
 
 function ContactUs() {
   return (
