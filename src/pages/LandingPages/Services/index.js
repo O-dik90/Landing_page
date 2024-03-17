@@ -24,59 +24,56 @@ import routes from "routes";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 function Services() {
-    return (
-        <>
-            <DefaultNavbar routes={routes} dark sticky />
-            <MKBox
-                minHeight="75vh"
-                width="100%"
-                sx={{
-                    backgroundImage: ({
-                        functions: { linearGradient, rgba },
-                        palette: { gradients },
-                    }) =>
-                        `${linearGradient(
-                            rgba(gradients.dark.main, 0.6),
-                            rgba(gradients.dark.state, 0.6)
-                        )}, url(${bgImage})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    display: "grid",
-                    placeItems: "center",
-                }}
-            >
-                <Container>
-                    <Grid
-                        container
-                        item
-                        xs={12}
-                        lg={8}
-                        justifyContent="center"
-                        alignItems="center"
-                        flexDirection="column"
-                        sx={{ mx: "auto", textAlign: "center" }}
-                    ></Grid>
-                </Container>
-            </MKBox>
-            <Card
-                sx={{
-                    p: 2,
-                    mx: { xs: 2, lg: 3 },
-                    mt: -4,
-                    mb: 4,
-                    boxShadow: ({ boxShadows: { xxl } }) => xxl,
-                }}
-            >
-                <Information />
-                <Featuring />
-                <Mission />
-                <ServicePart />
-            </Card>
-            <MKBox pt={6} px={1} mt={6}>
-                <DefaultFooter content={footerRoutes} />
-            </MKBox>
-        </>
-    );
+  return (
+    <>
+      <DefaultNavbar routes={routes} dark sticky />
+      <MKBox
+        minHeight="75vh"
+        width="100%"
+        sx={{
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.6),
+              rgba(gradients.dark.state, 0.6)
+            )}, url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <Container>
+          <Grid
+            container
+            item
+            xs={12}
+            lg={8}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            sx={{ mx: "auto", textAlign: "center" }}
+          ></Grid>
+        </Container>
+      </MKBox>
+      <Card
+        sx={{
+          p: 2,
+          mx: { xs: 2, lg: 3 },
+          mt: -4,
+          mb: 4,
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }}
+      >
+        <Information />
+        <Featuring />
+        <Mission />
+        <ServicePart />
+      </Card>
+      <MKBox pt={6} px={1} mt={6}>
+        <DefaultFooter content={footerRoutes} />
+      </MKBox>
+    </>
+  );
 }
 
 export default Services;

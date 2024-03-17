@@ -11,40 +11,40 @@ import MKBox from "components/MKBox";
 import dataClientLogo from "pages/Presentation/data/index";
 
 function ClientsPart() {
-    const clientCollect = dataClientLogo.map((itemLogo, index) => (
-        <Grid
-            item
-            key={index}
-            xs={6}
-            md={3}
-            lg={2}
-            display="flex"
-            mx="auto"
-            alignItems="baseline"
-            justifyContent="center"
-            my={2}
-        >
-            <MKBox
-                component="img"
-                src={itemLogo.img}
-                alt={itemLogo?.title}
-                width="auto"
-                height={itemLogo?.height === true ? "35px" : "65px"}
-                opacity={1}
-                px={0}
-                // my={2}
-            />
-        </Grid>
-    ));
-    return (
-        <MKBox component="section" pt={10} pb={8}>
-            <Container>
-                <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
-                    {clientCollect}
-                    {/* <Grid item xs={2} md={2} mx={2} alignContent="center" alignItems="center">
+  const clientCollect = dataClientLogo.map((itemLogo, index) => (
+    <Grid
+      item
+      key={index}
+      xs={6}
+      md={3}
+      lg={2}
+      display="flex"
+      mx="auto"
+      alignItems="baseline"
+      justifyContent="center"
+      my={2}
+    >
+      <MKBox
+        component="img"
+        src={itemLogo.img}
+        alt={itemLogo?.title}
+        width="auto"
+        height={itemLogo?.height === true ? "35px" : "65px"}
+        opacity={1}
+        px={0}
+        // my={2}
+      />
+    </Grid>
+  ));
+  return (
+    <MKBox component="section" pt={10} pb={8}>
+      <Container>
+        <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
+          {clientCollect}
+          {/* <Grid item xs={2} md={2} mx={2} alignContent="center" alignItems="center">
                         <MKBox component="img" src={ovo} alt="nasa" width="100%" />
                     </Grid> */}
-                    {/* <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
+          {/* <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
                         <Grid item xs={12} md={3}>
                             <DefaultCounterCard
                                 count={200}
@@ -63,10 +63,10 @@ function ClientsPart() {
                             />
                         </Grid>
                     </Grid> */}
-                </Grid>
-            </Container>
-        </MKBox>
-    );
+        </Grid>
+      </Container>
+    </MKBox>
+  );
 }
 
 export default ClientsPart;

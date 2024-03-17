@@ -24,57 +24,54 @@ import bgImage from "assets/images/cover/bg-sign-in-basic.jpeg";
 // Images
 
 function Mission() {
-    return (
-        <MKBox
-            component="section"
-            variant="gradient"
-            bgColor="dark"
-            position="relative"
-            py={6}
-            my={3}
-            px={{ xs: 2, lg: 0 }}
-            mx={-2}
-            sx={{
-                backgroundImage: ({
-                    functions: { linearGradient, rgba },
-                    palette: { gradients },
-                }) =>
-                    `${linearGradient(
-                        rgba(gradients.dark.main, 0.5),
-                        rgba(gradients.dark.state, 0.9)
-                    )}, url(${bgImage})`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                display: "grid",
-                placeItems: "center",
-            }}
-        >
-            <Container>
-                <Grid container>
-                    <Grid item xs={12} md={6} sx={{ mb: 6 }}>
-                        <MKTypography variant="h3" color="white">
-                            VISION
-                        </MKTypography>
-                        <MKTypography variant="body2" color="white" opacity={0.8}>
-                            Our vision is "To become one of the professional production houses in
-                            Indonesia that is capable of creating the best quality of work."
-                        </MKTypography>
-                    </Grid>
-                </Grid>
-                <Grid container>
-                    <Grid item xs={12} md={6} sx={{ mb: 6 }}>
-                        <MKTypography variant="h3" color="white">
-                            MISSION
-                        </MKTypography>
-                        <MKTypography variant="body2" color="white" opacity={0.8}>
-                            Our mission is "To always work wholeheartedly so that every work that is
-                            born can have an impact on the audience"
-                        </MKTypography>
-                    </Grid>
-                </Grid>
-            </Container>
-        </MKBox>
-    );
+  return (
+    <MKBox
+      component="section"
+      variant="gradient"
+      bgColor="dark"
+      position="relative"
+      py={6}
+      my={3}
+      px={{ xs: 2, lg: 0 }}
+      mx={-2}
+      sx={{
+        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+          `${linearGradient(
+            rgba(gradients.dark.main, 0.5),
+            rgba(gradients.dark.state, 0.9)
+          )}, url(${bgImage})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        display: "grid",
+        placeItems: "center",
+      }}
+    >
+      <Container>
+        <Grid container>
+          <Grid item xs={12} md={6} sx={{ mb: 6 }}>
+            <MKTypography variant="h3" color="white">
+              VISION
+            </MKTypography>
+            <MKTypography variant="body2" color="white" opacity={0.8}>
+              Our vision is "To become one of the professional production houses in Indonesia that
+              is capable of creating the best quality of work."
+            </MKTypography>
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={12} md={6} sx={{ mb: 6 }}>
+            <MKTypography variant="h3" color="white">
+              MISSION
+            </MKTypography>
+            <MKTypography variant="body2" color="white" opacity={0.8}>
+              Our mission is "To always work wholeheartedly so that every work that is born can have
+              an impact on the audience"
+            </MKTypography>
+          </Grid>
+        </Grid>
+      </Container>
+    </MKBox>
+  );
 }
 
 export default Mission;
