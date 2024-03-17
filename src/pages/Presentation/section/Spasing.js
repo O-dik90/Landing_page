@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -19,11 +20,12 @@ import Grid from "@mui/material/Grid";
 // Material Kit 2 React examples
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-import bgImage from "assets/images/cover/bg-sign-in-basic.jpeg";
+import bgImage from "assets/images/nikon.jpg";
 // Images
 
-function Mission() {
+function Spasing() {
     return (
         <MKBox
             component="section"
@@ -31,9 +33,9 @@ function Mission() {
             bgColor="dark"
             position="relative"
             py={6}
-            my={3}
+            my={6}
             px={{ xs: 2, lg: 0 }}
-            mx={-2}
+            mx={0}
             sx={{
                 backgroundImage: ({
                     functions: { linearGradient, rgba },
@@ -43,33 +45,25 @@ function Mission() {
                         rgba(gradients.dark.main, 0.5),
                         rgba(gradients.dark.state, 0.9)
                     )}, url(${bgImage})`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundPosition: "bottom",
                 display: "grid",
                 placeItems: "center",
             }}
         >
             <Container>
                 <Grid container>
-                    <Grid item xs={12} md={6} sx={{ mb: 6 }}>
-                        <MKTypography variant="h3" color="white">
-                            VISION
+                    <Grid item xs={12} md={6} sx={{ my: 10 }}>
+                        <MKTypography variant="h3" color="white" pb={2}>
+                            LET&apos;S CREATE TOGETHER!
                         </MKTypography>
-                        <MKTypography variant="body2" color="white" opacity={0.8}>
-                            Our vision is "To become one of the professional production houses in
-                            Indonesia that is capable of creating the best quality of work."
-                        </MKTypography>
-                    </Grid>
-                </Grid>
-                <Grid container>
-                    <Grid item xs={12} md={6} sx={{ mb: 6 }}>
-                        <MKTypography variant="h3" color="white">
-                            MISSION
-                        </MKTypography>
-                        <MKTypography variant="body2" color="white" opacity={0.8}>
-                            Our mission is "To always work wholeheartedly so that every work that is
-                            born can have an impact on the audience"
-                        </MKTypography>
+                        <MKButton
+                            color="info"
+                            sx={{ color: ({ palette: { dark } }) => dark.main }}
+                            disabled
+                        >
+                            <MKTypography variant="body2" color="white">Create Project</MKTypography>
+                        </MKButton>
                     </Grid>
                 </Grid>
             </Container>
@@ -77,4 +71,4 @@ function Mission() {
     );
 }
 
-export default Mission;
+export default Spasing;

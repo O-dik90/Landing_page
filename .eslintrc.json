@@ -1,33 +1,33 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": ["prettier"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ]
-    // "react/react-in-jsx-scope": "off",
-    // "react/jsx-filename-extension": [1, { "extensions": [".tsx",".js", ".jsx"] }],
-    // "react/jsx-props-no-spreading": [
-    //   1,
-    //   {
-    //     "custom": "ignore"
-    //   }
-    // ],
-    // "react/jsx-curly-spacing": [2, "never"]
-  },
-  "settings": { "import/resolver": { "node": { "paths": ["src"] } } }
+    "extends": ["prettier", "plugin:import/recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["prettier", "import"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+        // "react/react-in-jsx-scope": "off",
+        // "react/jsx-filename-extension": [1, { "extensions": [".tsx",".js", ".jsx"] }],
+        // "react/jsx-props-no-spreading": [
+        //   1,
+        //   {
+        //     "custom": "ignore"
+        //   }
+        // ]
+        // "react/jsx-curly-spacing": [2, "never"]
+    },
+    "settings": { "import/resolver": { "node": { "paths": ["src"] } } }
 }
