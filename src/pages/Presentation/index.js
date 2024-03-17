@@ -6,7 +6,6 @@ import Container from "@mui/material/Container";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 // Material Kit 2 React components
@@ -16,6 +15,7 @@ import Spasing from "./section/Spasing";
 import WorksPart from "./section/WorksPart";
 // Images
 import bgImage from "assets/images/cover/bg_landing_rev.jpg";
+import contactUs from "assets/images/studio.jpg";
 import footerRoutes from "footer.routes";
 // Routes
 import routes from "routes";
@@ -116,9 +116,7 @@ function Presentation() {
                         </MKTypography> */}
             <Grid container>
               <Grid item xs={12} md={5}>
-                <MKBox position="relative">
-                  <MKBox component="img" src={bgImage} alt="about" width="100%" borderRadius="lg" />
-                </MKBox>
+                <MKBox component="img" src={contactUs} alt="about" width="100%" borderRadius="lg" />
               </Grid>
               <Grid
                 item
