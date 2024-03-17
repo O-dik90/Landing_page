@@ -2,5 +2,5 @@
 import Gallery from "pages/LandingPages/Gallery";
 
 export default function GalleryPage() {
-  return <Gallery />;
+    return <Gallery />;
 }

@@ -2,5 +2,5 @@
 import WorkUs from "pages/LandingPages/Work";
 
 export default function ContactUsPage() {
-  return <WorkUs />;
+    return <WorkUs />;
 }
